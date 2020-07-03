@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">HelloConstraints</string>
+    <string name="zero">Zero</string>
+    <string name="count">Count</string>
+    <string name="_0">0</string>
+    <string name="toast">Toast</string>
+    <string name="toast_message">Tong Zheng Hui 19WMD00991</string>
+
 </resources>
