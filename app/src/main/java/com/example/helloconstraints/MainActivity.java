@@ -1,13 +1,12 @@
 package com.example.helloconstraints;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -33,25 +32,23 @@ public class MainActivity extends AppCompatActivity {
 
     public void countup(View view) {
         mCount++;
-        if(mShowCount !=null)
+        if(mShowCount !=null) {
             mShowCount.setText(Integer.toString(mCount));
+        }
         setZeroButton.setBackgroundColor(Color.MAGENTA);
 
-        /*switchCountButton.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
-        switchCountButton.setClickable(true);*/
-        if(mCount % 2==0)
+        if(mCount % 2==0) {
             //if mCount mod 2 is 0, number is even otherwise odd
-            view.setBackgroundColor(Color.BLUE);
-
+            switchCountButton.setBackgroundColor(Color.BLUE);
+        }
         else
-            view.setBackgroundColor(Color.GREEN);
+            switchCountButton.setBackgroundColor(Color.GREEN);
     }
 
     public void setZero(View view)
     {
         mCount=0;
         mShowCount.setText(Integer.toString(mCount));
-
         setZeroButton.setBackgroundColor(Color.GRAY);
         switchCountButton.setBackgroundColor(Color.BLUE);
     }
